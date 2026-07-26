@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaLeLu – Babyphone mit Privatsphäre</title>
+<style>
+  :root{--bg:#221A4D;--bg2:#4A3A94;--card:#2E2456;--cream:#FFE1A8;--text:#F3EEFF;--muted:#B9AEDC;--line:#4a3f7a}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--text);background:linear-gradient(180deg,var(--bg2),var(--bg));min-height:100vh;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 20px 80px;text-align:center}
+  .moon{width:88px;height:88px;margin-bottom:10px}
+  h1{font-size:2.4rem;margin:.1em 0}
+  .tag{color:var(--cream);font-size:1.15rem;margin-top:0}
+  .lead{color:var(--muted);max-width:52ch;margin:18px auto 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:36px 0;text-align:left}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h3{margin:.1em 0 .3em;color:var(--cream);font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:24px}
+  a{color:var(--cream)}
+  .links{margin-top:22px;color:var(--muted)}
+  footer{margin-top:40px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg class="moon" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"/><stop offset="1" stop-color="#FFDD9A"/></linearGradient></defs><path d="M60.5 59.75 a30 30 0 1 1 -12 -24 a26 26 0 1 0 12 24 z" fill="url(#c)"/><path d="M80.5 32.75 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6 z" fill="url(#c)"/></svg>
+  <h1>LaLeLu</h1>
+  <p class="tag">Das Babyphone, das deine Familie für sich behält.</p>
+  <p class="lead">Verwandle zwei Apple-Geräte in ein Babyphone: Live-Bild und Ton, verlässliche Geräusch-Alarme und Einschlaf-Klänge – ganz ohne Konto und ohne fremden Server für Bild und Ton.</p>
+
+  <div class="grid">
+    <div class="card"><h3>🔒 Privatsphäre zuerst</h3><p>Bild und Ton laufen Ende-zu-Ende verschlüsselt direkt zwischen deinen Geräten. Nichts wird aufgezeichnet.</p></div>
+    <div class="card"><h3>🔔 Kluge Alarme</h3><p>Erkennt Weinen, Husten &amp; Co. direkt auf dem Gerät und meldet sich – auch wenn dein Handy gesperrt ist.</p></div>
+    <div class="card"><h3>🌙 Zum Einschlafen</h3><p>Sanftes Rauschen, Regen und Meer mit Timer, Nachtmodus und dunkler Nachtsicht.</p></div>
+    <div class="card"><h3>🗣️ Zurücksprechen</h3><p>Beruhige dein Baby aus der Ferne per Push-to-Talk. Mehrere Eltern-Geräte möglich.</p></div>
+  </div>
+
+  <div class="contact">
+    <h3 style="margin-top:0;color:var(--cream)">Support &amp; Kontakt</h3>
+    <p style="color:var(--muted);margin:.2em 0 0">Fragen, Rückmeldungen oder Hilfe?<br>Schreib an <a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
+  </div>
+
+  <p class="links"><a href="./datenschutz.html">Datenschutzerklärung</a></p>
+  <footer>© 2026 Moritz Wolf · LaLeLu</footer>
+</div>
+</body>
+</html>

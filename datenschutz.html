@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz – LaLeLu</title>
+<style>
+  :root{--bg:#221A4D;--bg2:#4A3A94;--card:#2E2456;--cream:#FFE1A8;--text:#F3EEFF;--muted:#B9AEDC;--line:#4a3f7a}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--text);background:linear-gradient(180deg,var(--bg2),var(--bg));min-height:100vh;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .moon{width:40px;height:40px;flex:0 0 auto}
+  h1{font-size:1.7rem;margin:.2em 0}
+  h2{font-size:1.2rem;margin:1.8em 0 .4em;color:var(--cream)}
+  h3{font-size:1.02rem;margin:1.2em 0 .3em}
+  a{color:var(--cream)}
+  .lead{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:2px 18px;margin:18px 0}
+  table{width:100%;border-collapse:collapse;margin:.5em 0;font-size:.95rem}
+  th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--cream);font-weight:600}
+  .muted{color:var(--muted)}
+  .back{display:inline-block;margin-top:28px;color:var(--muted);text-decoration:none}
+  footer{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg class="moon" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"/><stop offset="1" stop-color="#FFDD9A"/></linearGradient></defs><path d="M60.5 59.75 a30 30 0 1 1 -12 -24 a26 26 0 1 0 12 24 z" fill="url(#c)"/><path d="M80.5 32.75 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6 z" fill="url(#c)"/></svg>
+  <h1>Datenschutzerklärung – LaLeLu</h1>
+</header>
+<p class="lead">Stand: 25.&nbsp;Juli 2026</p>
+
+<div class="card">
+<h2>Worum geht es?</h2>
+<p>LaLeLu ist ein Babyphone für iPhone, iPad und Mac. Diese Erklärung beschreibt so ehrlich und genau wie möglich, welche Daten bei der Nutzung entstehen, wo sie hinfließen und was mit ihnen passiert.</p>
+<p><strong>Das Wichtigste vorweg:</strong> LaLeLu ist so gebaut, dass möglichst wenig Daten irgendwo landen. Video und Ton laufen direkt und verschlüsselt zwischen den Familiengeräten, es gibt kein Nutzerkonto bei uns, und die einzige dauerhaft gespeicherte Information ist ein kleiner technischer Datensatz, der nach 30 Tagen automatisch gelöscht wird.</p>
+</div>
+
+<h2>1. Wer ist verantwortlich?</h2>
+<p>LaLeLu wird von einer Einzelperson entwickelt und betrieben:</p>
+<p>Moritz Wolf<br><a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
+<p class="muted">Bei Fragen zum Datenschutz oder um von deinen Rechten Gebrauch zu machen (siehe Abschnitt&nbsp;8), wende dich bitte an diese Adresse.</p>
+
+<h2>2. Wie funktioniert LaLeLu – und wo fließen dabei Daten hin?</h2>
+<h3>2.1 Video und Ton der Übertragung</h3>
+<p>Bild und Ton werden <strong>Ende-zu-Ende verschlüsselt direkt zwischen den Geräten deiner Familie</strong> übertragen (Technik: WebRTC mit Verschlüsselung nach Industriestandard DTLS-SRTP). Nur die Geräte, die du selbst gekoppelt hast, können das Bild sehen.</p>
+<p>Ist eine direkte Verbindung technisch nicht möglich, wird der – weiterhin verschlüsselte – Datenstrom über einen Vermittlungs-Server von Cloudflare umgeleitet (TURN-Relay). Auch dann kann Cloudflare Bild und Ton <strong>nicht entschlüsseln oder mitlesen</strong>. <strong>Es wird zu keinem Zeitpunkt Video oder Ton aufgezeichnet oder gespeichert.</strong></p>
+<h3>2.2 Geräuscherkennung</h3>
+<p>LaLeLu erkennt z. B. Weinen oder Husten <strong>vollständig auf dem Gerät</strong> (Apples SoundAnalysis). Es wird <strong>kein Audio in die Cloud oder an uns geschickt</strong> und nichts zu Trainingszwecken gespeichert.</p>
+<h3>2.3 Kopplung der Geräte</h3>
+<p>Zum Koppeln nutzt LaLeLu deinen bestehenden <strong>Apple-iCloud-Zugang</strong> (CloudKit). LaLeLu selbst hat <strong>kein eigenes Konto, keine Registrierung, kein Passwort</strong>. Der Kopplungs-Schlüssel verbleibt bei Apple/iCloud und auf deinen Geräten.</p>
+<h3>2.4 Verbindungsaufbau (Signalisierung)</h3>
+<p>Vor einer direkten Verbindung „verabreden" sich die Geräte technisch über einen Vermittlungs-Server (Cloudflare Worker). Die Inhalte dieser Verabredung sind zusätzlich verschlüsselt (AES-GCM). Fällt dieser Weg aus, dient iCloud als Rückfall.</p>
+<h3>2.5 Alarme per Mitteilung</h3>
+<p>Wird ein Geräusch erkannt und du bist nicht in der App, kann LaLeLu eine Mitteilung schicken – über den Cloudflare-Vermittler an <strong>Apples Push-Dienst (APNs)</strong>.</p>
+
+<h2>3. Was wird dauerhaft gespeichert – und wo?</h2>
+<h3>3.1 Beim Vermittlungs-Server (Cloudflare)</h3>
+<p>Damit dein Gerät Mitteilungen empfangen kann, speichert der Server pro Eltern-Gerät einen kleinen Datensatz:</p>
+<ul>
+<li>das <strong>Apple-Push-Token</strong> (anonyme, von Apple vergebene Geräte-Kennung – kein Name, keine Telefonnummer),</li>
+<li>die Information <strong>iOS oder iPadOS</strong>,</li>
+<li>einen <strong>Zeitstempel</strong> der letzten Aktualisierung.</li>
+</ul>
+<p>Gruppiert wird über eine <strong>zufällig erzeugte Kennung</strong>, die <strong>nicht mit Apple-ID, Namen oder persönlichen Angaben verknüpft</strong> ist. <strong>Automatische Löschung nach 30 Tagen</strong> ohne Aktualisierung.</p>
+<p><strong>Nicht gespeichert:</strong> Namen, E-Mail, Standort, Bild-/Toninhalte, Alarm-Historie.</p>
+<p><strong>Zwei Angaben laufen transparenzhalber unverschlüsselt (Klartext) durch den Server</strong>, nur für die Sekunden der Zustellung, ohne gespeichert zu werden: der <strong>Geräte-Name</strong> (z. B. „iPhone von Moritz") und die <strong>Art des Geräuschs</strong> (z. B. „Husten"). Wir nennen das offen, weil uns Transparenz wichtiger ist als ein makelloses Bild.</p>
+<h3>3.2 IP-Adressen</h3>
+<p>Wie bei jedem Internetdienst ist beim Verbindungsaufbau die <strong>IP-Adresse</strong> für den Netzwerk-Dienstleister (hier Cloudflare) sichtbar. <strong>LaLeLu selbst speichert keine IP-Adressen.</strong> Es gelten zusätzlich die Datenschutzhinweise von Cloudflare.</p>
+<h3>3.3 Auf deinem Gerät (lokal)</h3>
+<p>Ein lokaler <strong>Aktivitäts-Verlauf</strong> (Zeitpunkt, Art, Erkennungssicherheit) bleibt <strong>ausschließlich auf deinem Gerät</strong>, ist auf <strong>max. 500 Einträge / 14 Tage</strong> begrenzt und wird <strong>nicht hochgeladen</strong>.</p>
+
+<h2>4. Welche Berechtigungen – und wofür?</h2>
+<table>
+<tr><th>Berechtigung</th><th>Wofür</th></tr>
+<tr><td>Kamera</td><td>Live-Bild vom Baby-Gerät an die Eltern-Geräte übertragen.</td></tr>
+<tr><td>Mikrofon</td><td>Ton-Übertragung und on-device Geräuscherkennung.</td></tr>
+<tr><td>Mitteilungen</td><td>Alarme, wenn ein Geräusch erkannt wird und die App im Hintergrund ist.</td></tr>
+<tr><td>Lokales Netzwerk</td><td>Direkte Verbindung im selben WLAN (schnellster, privatester Weg).</td></tr>
+</table>
+
+<h2>5. Kinder und Minderjährige</h2>
+<p>LaLeLu überträgt Bild und Ton eines Babys – <strong>ausschließlich innerhalb der von dir festgelegten Familien-Kopplung</strong>. <strong>Keine Weitergabe an Dritte zu Werbezwecken, kein Tracking, keine Analyse-/Werbe-SDKs, keine Werbung.</strong></p>
+
+<h2>6. Beteiligte Dienstleister</h2>
+<p>Beide erhalten <strong>keine Bild-/Toninhalte im Klartext</strong>:</p>
+<ul>
+<li><strong>Apple</strong> (iCloud/CloudKit, Push-Dienst APNs): Geräte-Kopplung und Zustellung von Mitteilungen. Es gilt zusätzlich die Datenschutzerklärung von Apple.</li>
+<li><strong>Cloudflare</strong> (Vermittlungs-Server / TURN-Relay, weltweite Server-Standorte): Verbindungsaufbau, Zustellung an Apple, verschlüsselter Rückfall-Weg für die Übertragung.</li>
+</ul>
+
+<h2>7. Speicherdauer im Überblick</h2>
+<table>
+<tr><th>Was</th><th>Wo</th><th>Wie lange</th></tr>
+<tr><td>Video/Ton der Übertragung</td><td>wird nicht gespeichert</td><td>–</td></tr>
+<tr><td>Erkanntes Audio</td><td>nicht in die Cloud übertragen</td><td>–</td></tr>
+<tr><td>Push-Token, OS-Info, Zeitstempel</td><td>Cloudflare-Vermittler</td><td>bis 30 Tage, dann autom. Löschung</td></tr>
+<tr><td>Aktivitäts-Verlauf</td><td>lokal auf deinem Gerät</td><td>max. 500 Einträge / 14 Tage</td></tr>
+<tr><td>Kopplungs-Schlüssel</td><td>Apple iCloud / deine Geräte</td><td>bis du die Kopplung auflöst</td></tr>
+</table>
+
+<h2>8. Deine Rechte</h2>
+<p>Da LaLeLu auch in der EU/Deutschland/Österreich genutzt werden kann, gilt die DSGVO. Du hast u. a. Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Beschwerde bei einer Aufsichtsbehörde.</p>
+<p><strong>So löschst du deine Daten:</strong> Löse die Kopplung in der App auf und/oder deinstalliere die App. Der kleine Push-Datensatz beim Vermittlungs-Server läuft spätestens <strong>30 Tage</strong> nach der letzten Aktivität automatisch ab. Für weitergehende Anfragen: Kontaktadresse aus Abschnitt&nbsp;1.</p>
+
+<h2>9. Änderungen</h2>
+<p>Ändert sich an LaLeLu etwas mit Auswirkung auf deine Daten, aktualisieren wir diese Erklärung und das „Stand"-Datum oben.</p>
+
+<a class="back" href="./">← Zurück zu LaLeLu</a>
+<footer>© 2026 Moritz Wolf · LaLeLu · <a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></footer>
+</div>
+</body>
+</html>
