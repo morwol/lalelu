@@ -1,117 +1,305 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datenschutz – LaLeLu</title>
-<style>
-  :root{--bg:#221A4D;--bg2:#4A3A94;--card:#2E2456;--cream:#FFE1A8;--text:#F3EEFF;--muted:#B9AEDC;--line:#4a3f7a}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       color:var(--text);background:linear-gradient(180deg,var(--bg2),var(--bg));min-height:100vh;line-height:1.6}
-  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-  header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-  .moon{width:40px;height:40px;flex:0 0 auto}
-  h1{font-size:1.7rem;margin:.2em 0}
-  h2{font-size:1.2rem;margin:1.8em 0 .4em;color:var(--cream)}
-  h3{font-size:1.02rem;margin:1.2em 0 .3em}
-  a{color:var(--cream)}
-  .lead{color:var(--muted)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:2px 18px;margin:18px 0}
-  table{width:100%;border-collapse:collapse;margin:.5em 0;font-size:.95rem}
-  th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{color:var(--cream);font-weight:600}
-  .muted{color:var(--muted)}
-  .back{display:inline-block;margin-top:28px;color:var(--muted);text-decoration:none}
-  footer{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
-</style>
+<meta name="description" content="Datenschutzerklärung der Babyphone-App LaLeLu: Ende-zu-Ende-Verschlüsselung, kein Nutzerkonto, keine Aufzeichnung, automatische Löschung nach 30 Tagen.">
+<meta name="theme-color" content="#131024">
+<meta property="og:title" content="Datenschutz – LaLeLu">
+<meta property="og:description" content="Datenschutzerklärung der Babyphone-App LaLeLu: Ende-zu-Ende-Verschlüsselung, kein Nutzerkonto, keine Aufzeichnung, automatische Löschung nach 30 Tagen.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="./support.js"></script>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <svg class="moon" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"/><stop offset="1" stop-color="#FFDD9A"/></linearGradient></defs><path d="M60.5 59.75 a30 30 0 1 1 -12 -24 a26 26 0 1 0 12 24 z" fill="url(#c)"/><path d="M80.5 32.75 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6 z" fill="url(#c)"/></svg>
-  <h1>Datenschutzerklärung – LaLeLu</h1>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#131024;color:#fff;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#FFE1A8;text-decoration:none}
+a:hover{color:#FFF6DE}
+h2,h3{scroll-margin-top:96px}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;font-family:-apple-system,system-ui,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="dcr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"></stop><stop offset="1" stop-color="#FFDD9A"></stop></linearGradient>
+<linearGradient id="dbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4A3A94"></stop><stop offset="1" stop-color="#221A4D"></stop></linearGradient>
+<mask id="dm"><circle cx="58" cy="64" r="30" fill="#fff"></circle><circle cx="70" cy="54" r="26" fill="#000"></circle></mask>
+</defs></svg>
+
+<header style="position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:20px;height:66px;padding:0 clamp(18px,4vw,44px);background:rgba(19,16,36,0.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <a href="index.html" style="display:flex;align-items:center;gap:11px">
+    <svg width="32" height="32" viewBox="0 0 120 120" style="border-radius:9px;flex-shrink:0" aria-hidden="true"><rect width="120" height="120" fill="url(#dbg)"></rect><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="url(#dcr)" mask="url(#dm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="url(#dcr)"></path></g></svg>
+    <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.3px;color:#fff">LaLe<span style="color:#FFE1A8">Lu</span></span>
+  </a>
+  <div style="flex:1"></div>
+  <a href="index.html" style="height:38px;padding:0 14px;border-radius:11px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;gap:7px;font-size:14.5px;font-weight:600;color:#fff" style-hover="background:rgba(255,255,255,0.12)">
+    <svg width="8" height="13" viewBox="0 0 10 16" fill="none" aria-hidden="true"><path d="M8 2L2 8l6 6" stroke="rgba(255,255,255,0.7)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    Zurück
+  </a>
 </header>
-<p class="lead">Stand: 25.&nbsp;Juli 2026</p>
 
-<div class="card">
-<h2>Worum geht es?</h2>
-<p>LaLeLu ist ein Babyphone für iPhone, iPad und Mac. Diese Erklärung beschreibt so ehrlich und genau wie möglich, welche Daten bei der Nutzung entstehen, wo sie hinfließen und was mit ihnen passiert.</p>
-<p><strong>Das Wichtigste vorweg:</strong> LaLeLu ist so gebaut, dass möglichst wenig Daten irgendwo landen. Video und Ton laufen direkt und verschlüsselt zwischen den Familiengeräten, es gibt kein Nutzerkonto bei uns, und die einzige dauerhaft gespeicherte Information ist ein kleiner technischer Datensatz, der nach 30 Tagen automatisch gelöscht wird.</p>
+<main style="flex:1;max-width:1120px;width:100%;margin:0 auto;padding:clamp(36px,6vw,72px) clamp(20px,5vw,44px) clamp(64px,8vw,96px)">
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:760px;margin-bottom:clamp(28px,4vw,44px)">
+    <span style="font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,225,168,0.8)">Rechtliches</span>
+    <h1 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(30px,4.6vw,50px);font-weight:800;letter-spacing:-1.1px;line-height:1.08;text-wrap:pretty">Datenschutzerklärung</h1>
+    <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:99px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+      <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.65)">Stand: {{ stand }}</span>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:clamp(24px,3vw,44px);align-items:flex-start;flex-wrap:wrap">
+
+  <div style="flex:1 1 440px;min-width:min(100%,300px);display:flex;flex-direction:column;gap:clamp(30px,4vw,44px)">
+
+    <div style="display:flex;flex-direction:column;gap:18px;padding:clamp(22px,3vw,32px);border-radius:24px;background:linear-gradient(150deg,rgba(255,225,168,0.09),rgba(255,225,168,0.02) 60%),#1C1738;border:1px solid rgba(255,225,168,0.18)">
+      <h2 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:19px;font-weight:800;letter-spacing:-0.3px">Das Wichtigste vorweg</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.65;color:rgba(255,255,255,0.78);text-wrap:pretty">LaLeLu ist so gebaut, dass möglichst wenig Daten irgendwo landen. Video und Ton laufen direkt und verschlüsselt zwischen den Familiengeräten, es gibt kein Nutzerkonto bei uns, und die einzige dauerhaft gespeicherte Information ist ein kleiner technischer Datensatz, der nach 30 Tagen automatisch gelöscht wird.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,0.05)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          <span style="font-size:14px;color:rgba(255,255,255,0.85)">Kein Nutzerkonto</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,0.05)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          <span style="font-size:14px;color:rgba(255,255,255,0.85)">Keine Aufzeichnung</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,0.05)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          <span style="font-size:14px;color:rgba(255,255,255,0.85)">Löschung nach 30 Tagen</span>
+        </div>
+      </div>
+    </div>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="worum" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px">Worum geht es?</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">LaLeLu ist ein Babyphone für iPhone, iPad und Mac. Diese Erklärung beschreibt so ehrlich und genau wie möglich, welche Daten bei der Nutzung entstehen, wo sie hinfließen und was mit ihnen passiert.</p>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="s1" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">1</span>Wer ist verantwortlich?</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72)">LaLeLu wird von einer Einzelperson entwickelt und betrieben:</p>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:18px;background:#1C1738;border:1px solid rgba(255,255,255,0.09);align-self:flex-start">
+        <div style="width:38px;height:38px;border-radius:11px;background:rgba(255,225,168,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"></circle><path d="M5 20c0-3.6 3.1-5.6 7-5.6s7 2 7 5.6"></path></svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-size:15.5px;font-weight:600">Moritz Wolf</span>
+          <a href="{{ mailto }}" style="font-size:14.5px">{{ email }}</a>
+        </div>
+      </div>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Bei Fragen zum Datenschutz oder um von deinen Rechten Gebrauch zu machen (siehe <a href="#s8">Abschnitt 8</a>), wende dich bitte an diese Adresse.</p>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:18px">
+      <h2 id="s2" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">2</span>Wie funktioniert LaLeLu — und wo fließen dabei Daten hin?</h2>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">2.1 Video und Ton der Übertragung</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Bild und Ton werden <strong style="color:#fff;font-weight:600">Ende-zu-Ende verschlüsselt direkt zwischen den Geräten deiner Familie</strong> übertragen (Technik: WebRTC mit Verschlüsselung nach Industriestandard DTLS-SRTP). Nur die Geräte, die du selbst gekoppelt hast, können das Bild sehen.</p>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Ist eine direkte Verbindung technisch nicht möglich, wird der — weiterhin verschlüsselte — Datenstrom über einen Vermittlungs-Server von Cloudflare umgeleitet (TURN-Relay). Auch dann kann Cloudflare Bild und Ton <strong style="color:#fff;font-weight:600">nicht entschlüsseln oder mitlesen</strong>. <strong style="color:#fff;font-weight:600">Es wird zu keinem Zeitpunkt Video oder Ton aufgezeichnet oder gespeichert.</strong></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">2.2 Geräuscherkennung</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">LaLeLu erkennt z. B. Weinen oder Husten <strong style="color:#fff;font-weight:600">vollständig auf dem Gerät</strong> (Apples SoundAnalysis). Es wird <strong style="color:#fff;font-weight:600">kein Audio in die Cloud oder an uns geschickt</strong> und nichts zu Trainingszwecken gespeichert.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">2.3 Kopplung der Geräte</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Zum Koppeln nutzt LaLeLu deinen bestehenden <strong style="color:#fff;font-weight:600">Apple-iCloud-Zugang</strong> (CloudKit). LaLeLu selbst hat <strong style="color:#fff;font-weight:600">kein eigenes Konto, keine Registrierung, kein Passwort</strong>. Der Kopplungs-Schlüssel verbleibt bei Apple/iCloud und auf deinen Geräten.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">2.4 Verbindungsaufbau (Signalisierung)</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Vor einer direkten Verbindung „verabreden“ sich die Geräte technisch über einen Vermittlungs-Server (Cloudflare Worker). Die Inhalte dieser Verabredung sind zusätzlich verschlüsselt (AES-GCM). Fällt dieser Weg aus, dient iCloud als Rückfall.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">2.5 Alarme per Mitteilung</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Wird ein Geräusch erkannt und du bist nicht in der App, kann LaLeLu eine Mitteilung schicken — über den Cloudflare-Vermittler an <strong style="color:#fff;font-weight:600">Apples Push-Dienst (APNs)</strong>.</p>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:18px">
+      <h2 id="s3" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">3</span>Was wird dauerhaft gespeichert — und wo?</h2>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">3.1 Beim Vermittlungs-Server (Cloudflare)</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Damit dein Gerät Mitteilungen empfangen kann, speichert der Server pro Eltern-Gerät einen kleinen Datensatz:</p>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;max-width:70ch">
+          <li style="display:flex;gap:12px;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.72)"><span style="color:#FFE1A8;flex-shrink:0">·</span><span>das <strong style="color:#fff;font-weight:600">Apple-Push-Token</strong> (anonyme, von Apple vergebene Geräte-Kennung — kein Name, keine Telefonnummer),</span></li>
+          <li style="display:flex;gap:12px;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.72)"><span style="color:#FFE1A8;flex-shrink:0">·</span><span>die Information <strong style="color:#fff;font-weight:600">iOS oder iPadOS</strong>,</span></li>
+          <li style="display:flex;gap:12px;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.72)"><span style="color:#FFE1A8;flex-shrink:0">·</span><span>einen <strong style="color:#fff;font-weight:600">Zeitstempel</strong> der letzten Aktualisierung.</span></li>
+        </ul>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Gruppiert wird über eine <strong style="color:#fff;font-weight:600">zufällig erzeugte Kennung</strong>, die <strong style="color:#fff;font-weight:600">nicht mit Apple-ID, Namen oder persönlichen Angaben verknüpft</strong> ist. <strong style="color:#fff;font-weight:600">Automatische Löschung nach 30 Tagen</strong> ohne Aktualisierung.</p>
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:16px 18px;border-radius:16px;background:rgba(123,220,164,0.08);border:1px solid rgba(123,220,164,0.22);max-width:70ch">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+          <p style="margin:0;font-size:15.5px;line-height:1.6"><strong style="color:#fff;font-weight:600">Nicht gespeichert:</strong> <span style="color:rgba(255,255,255,0.78)">Namen, E-Mail, Standort, Bild-/Toninhalte, Alarm-Historie.</span></p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:16px 18px;border-radius:16px;background:rgba(252,191,90,0.08);border:1px solid rgba(252,191,90,0.24);max-width:70ch">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FCBF5A" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M12 7.5v6M12 17h.01"></path><circle cx="12" cy="12" r="9"></circle></svg>
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:rgba(255,255,255,0.78);text-wrap:pretty"><strong style="color:#fff;font-weight:600">Zwei Angaben laufen transparenzhalber unverschlüsselt (Klartext) durch den Server</strong>, nur für die Sekunden der Zustellung, ohne gespeichert zu werden: der <strong style="color:#fff;font-weight:600">Geräte-Name</strong> (z. B. „iPhone von Moritz“) und die <strong style="color:#fff;font-weight:600">Art des Geräuschs</strong> (z. B. „Husten“). Wir nennen das offen, weil uns Transparenz wichtiger ist als ein makelloses Bild.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">3.2 IP-Adressen</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Wie bei jedem Internetdienst ist beim Verbindungsaufbau die <strong style="color:#fff;font-weight:600">IP-Adresse</strong> für den Netzwerk-Dienstleister (hier Cloudflare) sichtbar. <strong style="color:#fff;font-weight:600">LaLeLu selbst speichert keine IP-Adressen.</strong> Es gelten zusätzlich die Datenschutzhinweise von Cloudflare.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:17.5px;font-weight:700;color:#FFE9C4">3.3 Auf deinem Gerät (lokal)</h3>
+        <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Ein lokaler <strong style="color:#fff;font-weight:600">Aktivitäts-Verlauf</strong> (Zeitpunkt, Art, Erkennungssicherheit) bleibt <strong style="color:#fff;font-weight:600">ausschließlich auf deinem Gerät</strong>, ist auf <strong style="color:#fff;font-weight:600">max. 500 Einträge / 14 Tage</strong> begrenzt und wird <strong style="color:#fff;font-weight:600">nicht hochgeladen</strong>.</p>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:16px">
+      <h2 id="s4" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">4</span>Welche Berechtigungen — und wofür?</h2>
+      <div style="display:flex;flex-direction:column;gap:2px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09);overflow:hidden">
+        <div style="display:flex;gap:16px;padding:16px 18px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,0.07)">
+          <div style="display:flex;align-items:center;gap:12px;flex:0 0 180px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><rect x="2.5" y="6.5" width="14" height="11" rx="2.6"></rect><path d="M16.5 10.5l5-2.5v8l-5-2.5z"></path></svg>
+            <span style="font-size:15.5px;font-weight:600">Kamera</span>
+          </div>
+          <span style="flex:1 1 240px;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,0.68)">Live-Bild vom Baby-Gerät an die Eltern-Geräte übertragen.</span>
+        </div>
+        <div style="display:flex;gap:16px;padding:16px 18px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,0.07)">
+          <div style="display:flex;align-items:center;gap:12px;flex:0 0 180px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><rect x="9.4" y="3" width="5.2" height="10" rx="2.6"></rect><path d="M6.4 11.4a5.6 5.6 0 0 0 11.2 0"></path><path d="M12 17v3.5M9.6 20.5h4.8"></path></svg>
+            <span style="font-size:15.5px;font-weight:600">Mikrofon</span>
+          </div>
+          <span style="flex:1 1 240px;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,0.68)">Ton-Übertragung und on-device Geräuscherkennung.</span>
+        </div>
+        <div style="display:flex;gap:16px;padding:16px 18px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,0.07)">
+          <div style="display:flex;align-items:center;gap:12px;flex:0 0 180px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M12 3.5a5.6 5.6 0 0 0-5.6 5.6c0 4.1-1.9 5.6-1.9 5.6h15s-1.9-1.5-1.9-5.6A5.6 5.6 0 0 0 12 3.5z"></path><path d="M10.2 17.4a1.9 1.9 0 0 0 3.6 0"></path></svg>
+            <span style="font-size:15.5px;font-weight:600">Mitteilungen</span>
+          </div>
+          <span style="flex:1 1 240px;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,0.68)">Alarme, wenn ein Geräusch erkannt wird und die App im Hintergrund ist.</span>
+        </div>
+        <div style="display:flex;gap:16px;padding:16px 18px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:12px;flex:0 0 180px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 9.5a11 11 0 0 1 16 0"></path><path d="M7 13a7 7 0 0 1 10 0"></path><circle cx="12" cy="17.5" r="1.4" fill="#FFE1A8" stroke="none"></circle></svg>
+            <span style="font-size:15.5px;font-weight:600">Lokales Netzwerk</span>
+          </div>
+          <span style="flex:1 1 240px;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,0.68)">Direkte Verbindung im selben WLAN (schnellster, privatester Weg).</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="s5" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">5</span>Kinder und Minderjährige</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">LaLeLu überträgt Bild und Ton eines Babys — <strong style="color:#fff;font-weight:600">ausschließlich innerhalb der von dir festgelegten Familien-Kopplung</strong>. <strong style="color:#fff;font-weight:600">Keine Weitergabe an Dritte zu Werbezwecken, kein Tracking, keine Analyse-/Werbe-SDKs, keine Werbung.</strong></p>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="s6" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">6</span>Beteiligte Dienstleister</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72)">Beide erhalten <strong style="color:#fff;font-weight:600">keine Bild-/Toninhalte im Klartext</strong>:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+        <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:18px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)">
+          <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16.5px;font-weight:700">Apple</span>
+          <span style="font-size:12.5px;font-weight:600;letter-spacing:0.4px;text-transform:uppercase;color:rgba(255,225,168,0.75)">iCloud / CloudKit · APNs</span>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.65);text-wrap:pretty">Geräte-Kopplung und Zustellung von Mitteilungen. Es gilt zusätzlich die Datenschutzerklärung von Apple.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:18px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)">
+          <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16.5px;font-weight:700">Cloudflare</span>
+          <span style="font-size:12.5px;font-weight:600;letter-spacing:0.4px;text-transform:uppercase;color:rgba(255,225,168,0.75)">Vermittlung · TURN-Relay</span>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.65);text-wrap:pretty">Verbindungsaufbau, Zustellung an Apple, verschlüsselter Rückfall-Weg für die Übertragung. Weltweite Server-Standorte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:16px">
+      <h2 id="s7" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">7</span>Speicherdauer im Überblick</h2>
+      <div style="border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09);overflow:hidden">
+        <div style="display:flex;gap:12px;padding:12px 18px;background:rgba(255,255,255,0.05);flex-wrap:wrap">
+          <span style="flex:1 1 200px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5)">Was</span>
+          <span style="flex:1 1 160px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5)">Wo</span>
+          <span style="flex:1 1 160px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5)">Wie lange</span>
+        </div>
+        <div style="display:flex;gap:12px;padding:15px 18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.07)">
+          <span style="flex:1 1 200px;font-size:15px;font-weight:600">Video/Ton der Übertragung</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.68)">wird nicht gespeichert</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.4)">—</span>
+        </div>
+        <div style="display:flex;gap:12px;padding:15px 18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.07)">
+          <span style="flex:1 1 200px;font-size:15px;font-weight:600">Erkanntes Audio</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.68)">nicht in die Cloud übertragen</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.4)">—</span>
+        </div>
+        <div style="display:flex;gap:12px;padding:15px 18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.07)">
+          <span style="flex:1 1 200px;font-size:15px;font-weight:600">Push-Token, OS-Info, Zeitstempel</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.68)">Cloudflare-Vermittler</span>
+          <span style="flex:1 1 160px;font-size:15px;color:#FFE9C4">bis 30 Tage, dann autom. Löschung</span>
+        </div>
+        <div style="display:flex;gap:12px;padding:15px 18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.07)">
+          <span style="flex:1 1 200px;font-size:15px;font-weight:600">Aktivitäts-Verlauf</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.68)">lokal auf deinem Gerät</span>
+          <span style="flex:1 1 160px;font-size:15px;color:#FFE9C4">max. 500 Einträge / 14 Tage</span>
+        </div>
+        <div style="display:flex;gap:12px;padding:15px 18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.07)">
+          <span style="flex:1 1 200px;font-size:15px;font-weight:600">Kopplungs-Schlüssel</span>
+          <span style="flex:1 1 160px;font-size:15px;color:rgba(255,255,255,0.68)">Apple iCloud / deine Geräte</span>
+          <span style="flex:1 1 160px;font-size:15px;color:#FFE9C4">bis du die Kopplung auflöst</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="s8" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">8</span>Deine Rechte</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Da LaLeLu auch in der EU/Deutschland/Österreich genutzt werden kann, gilt die DSGVO. Du hast u. a. Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Beschwerde bei einer Aufsichtsbehörde.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:18px;border-radius:18px;background:#1C1738;border:1px solid rgba(255,255,255,0.09);max-width:70ch">
+        <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16px;font-weight:700">So löschst du deine Daten</span>
+        <p style="margin:0;font-size:15.5px;line-height:1.65;color:rgba(255,255,255,0.7);text-wrap:pretty">Löse die Kopplung in der App auf und/oder deinstalliere die App. Der kleine Push-Datensatz beim Vermittlungs-Server läuft spätestens <strong style="color:#fff;font-weight:600">30 Tage</strong> nach der letzten Aktivität automatisch ab. Für weitergehende Anfragen: Kontaktadresse aus <a href="#s1">Abschnitt 1</a>.</p>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:14px">
+      <h2 id="s9" style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(21px,2.4vw,26px);font-weight:800;letter-spacing:-0.5px"><span style="color:rgba(255,225,168,0.65);padding-right:10px">9</span>Änderungen</h2>
+      <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Ändert sich an LaLeLu etwas mit Auswirkung auf deine Daten, aktualisieren wir diese Erklärung und das „Stand“-Datum oben.</p>
+    </section>
+
+  </div>
+
+  <aside style="flex:1 1 240px;max-width:none;min-width:220px;position:sticky;top:98px;display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)">
+    <span style="font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.45);padding:0 8px 8px">Inhalt</span>
+    <a href="#worum" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff">Worum geht es?</a>
+    <a href="#s1" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">1</span>Verantwortlich</a>
+    <a href="#s2" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">2</span>Datenflüsse</a>
+    <a href="#s3" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">3</span>Gespeicherte Daten</a>
+    <a href="#s4" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">4</span>Berechtigungen</a>
+    <a href="#s5" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">5</span>Kinder</a>
+    <a href="#s6" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">6</span>Dienstleister</a>
+    <a href="#s7" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">7</span>Speicherdauer</a>
+    <a href="#s8" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">8</span>Deine Rechte</a>
+    <a href="#s9" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">9</span>Änderungen</a>
+  </aside>
+
+  </div>
+</main>
+
+<footer style="border-top:1px solid rgba(255,255,255,0.07);background:#0F0D1E">
+  <div style="max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,44px);display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:10px">
+      <svg width="22" height="22" viewBox="0 0 120 120" aria-hidden="true"><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="rgba(255,225,168,0.75)" mask="url(#dm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="rgba(255,225,168,0.75)"></path></g></svg>
+      <span style="font-size:14px;color:rgba(255,255,255,0.5)">© 2026 Moritz Wolf · LaLeLu</span>
+    </div>
+    <div style="flex:1"></div>
+    <nav style="display:flex;align-items:center;gap:20px">
+      <a href="index.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">Startseite</a>
+      <a href="{{ mailto }}" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">{{ email }}</a>
+    </nav>
+  </div>
+</footer>
 </div>
-
-<h2>1. Wer ist verantwortlich?</h2>
-<p>LaLeLu wird von einer Einzelperson entwickelt und betrieben:</p>
-<p>Moritz Wolf<br><a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
-<p class="muted">Bei Fragen zum Datenschutz oder um von deinen Rechten Gebrauch zu machen (siehe Abschnitt&nbsp;8), wende dich bitte an diese Adresse.</p>
-
-<h2>2. Wie funktioniert LaLeLu – und wo fließen dabei Daten hin?</h2>
-<h3>2.1 Video und Ton der Übertragung</h3>
-<p>Bild und Ton werden <strong>Ende-zu-Ende verschlüsselt direkt zwischen den Geräten deiner Familie</strong> übertragen (Technik: WebRTC mit Verschlüsselung nach Industriestandard DTLS-SRTP). Nur die Geräte, die du selbst gekoppelt hast, können das Bild sehen.</p>
-<p>Ist eine direkte Verbindung technisch nicht möglich, wird der – weiterhin verschlüsselte – Datenstrom über einen Vermittlungs-Server von Cloudflare umgeleitet (TURN-Relay). Auch dann kann Cloudflare Bild und Ton <strong>nicht entschlüsseln oder mitlesen</strong>. <strong>Es wird zu keinem Zeitpunkt Video oder Ton aufgezeichnet oder gespeichert.</strong></p>
-<h3>2.2 Geräuscherkennung</h3>
-<p>LaLeLu erkennt z. B. Weinen oder Husten <strong>vollständig auf dem Gerät</strong> (Apples SoundAnalysis). Es wird <strong>kein Audio in die Cloud oder an uns geschickt</strong> und nichts zu Trainingszwecken gespeichert.</p>
-<h3>2.3 Kopplung der Geräte</h3>
-<p>Zum Koppeln nutzt LaLeLu deinen bestehenden <strong>Apple-iCloud-Zugang</strong> (CloudKit). LaLeLu selbst hat <strong>kein eigenes Konto, keine Registrierung, kein Passwort</strong>. Der Kopplungs-Schlüssel verbleibt bei Apple/iCloud und auf deinen Geräten.</p>
-<h3>2.4 Verbindungsaufbau (Signalisierung)</h3>
-<p>Vor einer direkten Verbindung „verabreden" sich die Geräte technisch über einen Vermittlungs-Server (Cloudflare Worker). Die Inhalte dieser Verabredung sind zusätzlich verschlüsselt (AES-GCM). Fällt dieser Weg aus, dient iCloud als Rückfall.</p>
-<h3>2.5 Alarme per Mitteilung</h3>
-<p>Wird ein Geräusch erkannt und du bist nicht in der App, kann LaLeLu eine Mitteilung schicken – über den Cloudflare-Vermittler an <strong>Apples Push-Dienst (APNs)</strong>.</p>
-
-<h2>3. Was wird dauerhaft gespeichert – und wo?</h2>
-<h3>3.1 Beim Vermittlungs-Server (Cloudflare)</h3>
-<p>Damit dein Gerät Mitteilungen empfangen kann, speichert der Server pro Eltern-Gerät einen kleinen Datensatz:</p>
-<ul>
-<li>das <strong>Apple-Push-Token</strong> (anonyme, von Apple vergebene Geräte-Kennung – kein Name, keine Telefonnummer),</li>
-<li>die Information <strong>iOS oder iPadOS</strong>,</li>
-<li>einen <strong>Zeitstempel</strong> der letzten Aktualisierung.</li>
-</ul>
-<p>Gruppiert wird über eine <strong>zufällig erzeugte Kennung</strong>, die <strong>nicht mit Apple-ID, Namen oder persönlichen Angaben verknüpft</strong> ist. <strong>Automatische Löschung nach 30 Tagen</strong> ohne Aktualisierung.</p>
-<p><strong>Nicht gespeichert:</strong> Namen, E-Mail, Standort, Bild-/Toninhalte, Alarm-Historie.</p>
-<p><strong>Zwei Angaben laufen transparenzhalber unverschlüsselt (Klartext) durch den Server</strong>, nur für die Sekunden der Zustellung, ohne gespeichert zu werden: der <strong>Geräte-Name</strong> (z. B. „iPhone von Moritz") und die <strong>Art des Geräuschs</strong> (z. B. „Husten"). Wir nennen das offen, weil uns Transparenz wichtiger ist als ein makelloses Bild.</p>
-<h3>3.2 IP-Adressen</h3>
-<p>Wie bei jedem Internetdienst ist beim Verbindungsaufbau die <strong>IP-Adresse</strong> für den Netzwerk-Dienstleister (hier Cloudflare) sichtbar. <strong>LaLeLu selbst speichert keine IP-Adressen.</strong> Es gelten zusätzlich die Datenschutzhinweise von Cloudflare.</p>
-<h3>3.3 Auf deinem Gerät (lokal)</h3>
-<p>Ein lokaler <strong>Aktivitäts-Verlauf</strong> (Zeitpunkt, Art, Erkennungssicherheit) bleibt <strong>ausschließlich auf deinem Gerät</strong>, ist auf <strong>max. 500 Einträge / 14 Tage</strong> begrenzt und wird <strong>nicht hochgeladen</strong>.</p>
-
-<h2>4. Welche Berechtigungen – und wofür?</h2>
-<table>
-<tr><th>Berechtigung</th><th>Wofür</th></tr>
-<tr><td>Kamera</td><td>Live-Bild vom Baby-Gerät an die Eltern-Geräte übertragen.</td></tr>
-<tr><td>Mikrofon</td><td>Ton-Übertragung und on-device Geräuscherkennung.</td></tr>
-<tr><td>Mitteilungen</td><td>Alarme, wenn ein Geräusch erkannt wird und die App im Hintergrund ist.</td></tr>
-<tr><td>Lokales Netzwerk</td><td>Direkte Verbindung im selben WLAN (schnellster, privatester Weg).</td></tr>
-</table>
-
-<h2>5. Kinder und Minderjährige</h2>
-<p>LaLeLu überträgt Bild und Ton eines Babys – <strong>ausschließlich innerhalb der von dir festgelegten Familien-Kopplung</strong>. <strong>Keine Weitergabe an Dritte zu Werbezwecken, kein Tracking, keine Analyse-/Werbe-SDKs, keine Werbung.</strong></p>
-
-<h2>6. Beteiligte Dienstleister</h2>
-<p>Beide erhalten <strong>keine Bild-/Toninhalte im Klartext</strong>:</p>
-<ul>
-<li><strong>Apple</strong> (iCloud/CloudKit, Push-Dienst APNs): Geräte-Kopplung und Zustellung von Mitteilungen. Es gilt zusätzlich die Datenschutzerklärung von Apple.</li>
-<li><strong>Cloudflare</strong> (Vermittlungs-Server / TURN-Relay, weltweite Server-Standorte): Verbindungsaufbau, Zustellung an Apple, verschlüsselter Rückfall-Weg für die Übertragung.</li>
-</ul>
-
-<h2>7. Speicherdauer im Überblick</h2>
-<table>
-<tr><th>Was</th><th>Wo</th><th>Wie lange</th></tr>
-<tr><td>Video/Ton der Übertragung</td><td>wird nicht gespeichert</td><td>–</td></tr>
-<tr><td>Erkanntes Audio</td><td>nicht in die Cloud übertragen</td><td>–</td></tr>
-<tr><td>Push-Token, OS-Info, Zeitstempel</td><td>Cloudflare-Vermittler</td><td>bis 30 Tage, dann autom. Löschung</td></tr>
-<tr><td>Aktivitäts-Verlauf</td><td>lokal auf deinem Gerät</td><td>max. 500 Einträge / 14 Tage</td></tr>
-<tr><td>Kopplungs-Schlüssel</td><td>Apple iCloud / deine Geräte</td><td>bis du die Kopplung auflöst</td></tr>
-</table>
-
-<h2>8. Deine Rechte</h2>
-<p>Da LaLeLu auch in der EU/Deutschland/Österreich genutzt werden kann, gilt die DSGVO. Du hast u. a. Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Beschwerde bei einer Aufsichtsbehörde.</p>
-<p><strong>So löschst du deine Daten:</strong> Löse die Kopplung in der App auf und/oder deinstalliere die App. Der kleine Push-Datensatz beim Vermittlungs-Server läuft spätestens <strong>30 Tage</strong> nach der letzten Aktivität automatisch ab. Für weitergehende Anfragen: Kontaktadresse aus Abschnitt&nbsp;1.</p>
-
-<h2>9. Änderungen</h2>
-<p>Ändert sich an LaLeLu etwas mit Auswirkung auf deine Daten, aktualisieren wir diese Erklärung und das „Stand"-Datum oben.</p>
-
-<a class="back" href="./">← Zurück zu LaLeLu</a>
-<footer>© 2026 Moritz Wolf · LaLeLu · <a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></footer>
-</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;email&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;moritz.wolf@a1.net&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Inhalt&quot;}, &quot;stand&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;25. Juli 2026&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Inhalt&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const email = this.props.email ?? 'moritz.wolf@a1.net';
+    return { email, mailto: 'mailto:' + email, stand: this.props.stand ?? '25. Juli 2026' };
+  }
+}
+</script>
 </body>
 </html>

@@ -1,50 +1,234 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LaLeLu – Babyphone mit Privatsphäre</title>
-<style>
-  :root{--bg:#221A4D;--bg2:#4A3A94;--card:#2E2456;--cream:#FFE1A8;--text:#F3EEFF;--muted:#B9AEDC;--line:#4a3f7a}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       color:var(--text);background:linear-gradient(180deg,var(--bg2),var(--bg));min-height:100vh;line-height:1.6}
-  .wrap{max-width:760px;margin:0 auto;padding:56px 20px 80px;text-align:center}
-  .moon{width:88px;height:88px;margin-bottom:10px}
-  h1{font-size:2.4rem;margin:.1em 0}
-  .tag{color:var(--cream);font-size:1.15rem;margin-top:0}
-  .lead{color:var(--muted);max-width:52ch;margin:18px auto 0}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:36px 0;text-align:left}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .card h3{margin:.1em 0 .3em;color:var(--cream);font-size:1.05rem}
-  .card p{margin:0;color:var(--muted);font-size:.95rem}
-  .contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:24px}
-  a{color:var(--cream)}
-  .links{margin-top:22px;color:var(--muted)}
-  footer{margin-top:40px;color:var(--muted);font-size:.85rem}
-</style>
+<meta name="description" content="Verwandle zwei Apple-Geräte in ein Babyphone: Live-Bild und Ton, verlässliche Geräusch-Alarme und Einschlaf-Klänge – ohne Konto und ohne fremden Server für Bild und Ton.">
+<meta name="theme-color" content="#131024">
+<meta property="og:title" content="LaLeLu – Babyphone mit Privatsphäre">
+<meta property="og:description" content="Verwandle zwei Apple-Geräte in ein Babyphone: Live-Bild und Ton, verlässliche Geräusch-Alarme und Einschlaf-Klänge – ohne Konto und ohne fremden Server für Bild und Ton.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="./support.js"></script>
 </head>
 <body>
-<div class="wrap">
-  <svg class="moon" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"/><stop offset="1" stop-color="#FFDD9A"/></linearGradient></defs><path d="M60.5 59.75 a30 30 0 1 1 -12 -24 a26 26 0 1 0 12 24 z" fill="url(#c)"/><path d="M80.5 32.75 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6 z" fill="url(#c)"/></svg>
-  <h1>LaLeLu</h1>
-  <p class="tag">Das Babyphone, das deine Familie für sich behält.</p>
-  <p class="lead">Verwandle zwei Apple-Geräte in ein Babyphone: Live-Bild und Ton, verlässliche Geräusch-Alarme und Einschlaf-Klänge – ganz ohne Konto und ohne fremden Server für Bild und Ton.</p>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#131024;color:#fff;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FFE1A8;text-decoration:none}
+a:hover{color:#FFF6DE}
+@keyframes twinkle{from{opacity:.25}to{opacity:.8}}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;font-family:-apple-system,system-ui,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="wcr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"></stop><stop offset="1" stop-color="#FFDD9A"></stop></linearGradient>
+<linearGradient id="wbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4A3A94"></stop><stop offset="1" stop-color="#221A4D"></stop></linearGradient>
+<mask id="wm"><circle cx="58" cy="64" r="30" fill="#fff"></circle><circle cx="70" cy="54" r="26" fill="#000"></circle></mask>
+</defs></svg>
 
-  <div class="grid">
-    <div class="card"><h3>🔒 Privatsphäre zuerst</h3><p>Bild und Ton laufen Ende-zu-Ende verschlüsselt direkt zwischen deinen Geräten. Nichts wird aufgezeichnet.</p></div>
-    <div class="card"><h3>🔔 Kluge Alarme</h3><p>Erkennt Weinen, Husten &amp; Co. direkt auf dem Gerät und meldet sich – auch wenn dein Handy gesperrt ist.</p></div>
-    <div class="card"><h3>🌙 Zum Einschlafen</h3><p>Sanftes Rauschen, Regen und Meer mit Timer, Nachtmodus und dunkler Nachtsicht.</p></div>
-    <div class="card"><h3>🗣️ Zurücksprechen</h3><p>Beruhige dein Baby aus der Ferne per Push-to-Talk. Mehrere Eltern-Geräte möglich.</p></div>
+<header style="position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:20px;height:66px;padding:0 clamp(18px,4vw,44px);background:rgba(19,16,36,0.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <a href="#top" style="display:flex;align-items:center;gap:11px">
+    <svg width="32" height="32" viewBox="0 0 120 120" style="border-radius:9px;flex-shrink:0" aria-hidden="true"><rect width="120" height="120" fill="url(#wbg)"></rect><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="url(#wcr)" mask="url(#wm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="url(#wcr)"></path></g></svg>
+    <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.3px;color:#fff">LaLe<span style="color:#FFE1A8">Lu</span></span>
+  </a>
+  <div style="flex:1"></div>
+  <nav style="display:flex;align-items:center;gap:6px">
+    <a href="#funktionen" style="height:38px;padding:0 13px;border-radius:11px;display:flex;align-items:center;font-size:14.5px;font-weight:600;color:rgba(255,255,255,0.72)" style-hover="background:rgba(255,255,255,0.07);color:#fff">Funktionen</a>
+    <a href="#privatsphaere" style="height:38px;padding:0 13px;border-radius:11px;display:flex;align-items:center;font-size:14.5px;font-weight:600;color:rgba(255,255,255,0.72)" style-hover="background:rgba(255,255,255,0.07);color:#fff">Privatsphäre</a>
+    <a href="datenschutz.html" style="height:38px;padding:0 14px;border-radius:11px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;font-size:14.5px;font-weight:600;color:#fff" style-hover="background:rgba(255,255,255,0.12)">Datenschutz</a>
+  </nav>
+</header>
+
+<main id="top" style="flex:1">
+
+<section style="position:relative;overflow:hidden;background:linear-gradient(180deg,#3A2F73 0%,#453796 34%,#2A2159 72%,#131024 100%)">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle 620px at 50% 8%,rgba(255,225,168,0.16),rgba(255,225,168,0) 100%);pointer-events:none"></div>
+  <div style="position:absolute;inset:0;pointer-events:none" aria-hidden="true">
+    <div style="position:absolute;left:8%;top:14%;width:3px;height:3px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.4s ease-in-out infinite alternate"></div>
+    <div style="position:absolute;left:22%;top:32%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.1s ease-in-out .6s infinite alternate"></div>
+    <div style="position:absolute;left:16%;top:58%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.8s ease-in-out 1.2s infinite alternate"></div>
+    <div style="position:absolute;left:35%;top:9%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.2s ease-in-out .3s infinite alternate"></div>
+    <div style="position:absolute;left:47%;top:22%;width:3px;height:3px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 3s ease-in-out .9s infinite alternate"></div>
+    <div style="position:absolute;left:64%;top:12%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.5s ease-in-out 1.6s infinite alternate"></div>
+    <div style="position:absolute;left:78%;top:28%;width:3px;height:3px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.3s ease-in-out .2s infinite alternate"></div>
+    <div style="position:absolute;left:88%;top:16%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.7s ease-in-out 1.1s infinite alternate"></div>
+    <div style="position:absolute;left:92%;top:48%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.9s ease-in-out .7s infinite alternate"></div>
+    <div style="position:absolute;left:72%;top:62%;width:2px;height:2px;border-radius:50%;background:#FFF6DE;opacity:.25;animation:twinkle 2.6s ease-in-out 1.9s infinite alternate"></div>
   </div>
-
-  <div class="contact">
-    <h3 style="margin-top:0;color:var(--cream)">Support &amp; Kontakt</h3>
-    <p style="color:var(--muted);margin:.2em 0 0">Fragen, Rückmeldungen oder Hilfe?<br>Schreib an <a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
+  <div style="position:relative;max-width:1120px;margin:0 auto;padding:clamp(56px,9vw,104px) clamp(20px,5vw,44px) clamp(48px,7vw,88px);display:flex;gap:clamp(32px,5vw,72px);align-items:center;flex-wrap:wrap">
+    <div style="flex:1 1 420px;min-width:300px;display:flex;flex-direction:column;align-items:flex-start;gap:22px">
+      <div style="display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 13px;border-radius:99px;background:rgba(255,225,168,0.11);border:1px solid rgba(255,225,168,0.26)">
+        <svg width="12" height="12" viewBox="0 0 120 120" aria-hidden="true"><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="#FFE1A8" mask="url(#wm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="#FFE1A8"></path></g></svg>
+        <span style="font-size:13px;font-weight:700;color:#FFE9C4">Für iPhone, iPad und Mac</span>
+      </div>
+      <h1 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(36px,5.4vw,62px);font-weight:800;line-height:1.06;letter-spacing:-1.2px;text-wrap:pretty">Das Babyphone, das deine Familie für sich behält.</h1>
+      <p style="margin:0;max-width:520px;font-size:clamp(16.5px,1.6vw,19px);line-height:1.55;color:rgba(255,255,255,0.76);text-wrap:pretty">Verwandle zwei Apple-Geräte in ein Babyphone: Live-Bild und Ton, verlässliche Geräusch-Alarme und Einschlaf-Klänge — ganz ohne Konto und ohne fremden Server für Bild und Ton.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:2px">
+        <a href="{{ mailto }}" style="height:52px;padding:0 24px;border-radius:14px;background:#FFE1A8;color:#2E2456;display:flex;align-items:center;gap:9px;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16px;font-weight:700" style-hover="background:#FFEAC0" style-active="background:#E8C270">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2E2456" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3"></rect><path d="M3.5 7l8.5 6 8.5-6"></path></svg>
+          Kontakt aufnehmen
+        </a>
+        <a href="#privatsphaere" style="height:52px;padding:0 22px;border-radius:14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);color:#fff;display:flex;align-items:center;gap:9px;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16px;font-weight:700" style-hover="background:rgba(255,255,255,0.13)">Wie wir Daten schützen</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:9px;padding-top:6px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.6-7 10-4-1.4-7-5.5-7-10V6z"></path><path d="M9 11.5l2.2 2.2L15.5 9"></path></svg>
+        <span style="font-size:14px;color:rgba(255,255,255,0.6)">Ende-zu-Ende verschlüsselt · kein Nutzerkonto · keine Aufzeichnung</span>
+      </div>
+    </div>
+    <sc-if value="{{ showHeroDevice }}" hint-placeholder-val="{{ true }}">
+    <div style="flex:0 1 320px;display:flex;justify-content:center;min-width:260px">
+      <div style="position:relative;width:min(300px,74vw);animation:float 5s ease-in-out infinite alternate">
+        <div style="position:absolute;inset:-14% -18%;border-radius:50%;background:radial-gradient(circle,rgba(255,225,168,0.20),rgba(255,225,168,0) 70%);pointer-events:none"></div>
+        <div style="position:relative;padding:9px;border-radius:44px;background:linear-gradient(160deg,rgba(255,255,255,0.20),rgba(255,255,255,0.05));box-shadow:0 30px 70px rgba(0,0,0,0.5)">
+          <div style="position:relative;border-radius:36px;overflow:hidden;background:#0d0b18;aspect-ratio:9/19.5">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="lalelu-hero" shape="rect" placeholder=" " style="position:absolute;inset:0" hint-size="100%,100%"></x-import>
+            <div data-slot-hint="lalelu-hero" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;pointer-events:none">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:20px;border-radius:16px;border:1.5px dashed rgba(255,255,255,0.22);background:rgba(13,11,24,0.92);color:rgba(255,255,255,0.45);text-align:center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="m21 15-5-5L5 21"></path></svg>
+                <span style="font-size:12.5px;line-height:1.4">App-Screenshot hier ablegen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
   </div>
+</section>
 
-  <p class="links"><a href="./datenschutz.html">Datenschutzerklärung</a></p>
-  <footer>© 2026 Moritz Wolf · LaLeLu</footer>
+<section id="funktionen" style="max-width:1120px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,5vw,44px) clamp(20px,3vw,32px)">
+  <div style="display:flex;flex-direction:column;gap:10px;max-width:620px;margin-bottom:clamp(28px,4vw,44px)">
+    <span style="font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,225,168,0.8)">Funktionen</span>
+    <h2 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-0.7px;line-height:1.15;text-wrap:pretty">Alles, was eine ruhige Nacht braucht.</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px">
+    <article style="display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)" style-hover="border:1px solid rgba(255,225,168,0.28)">
+      <div style="width:44px;height:44px;border-radius:13px;background:rgba(255,225,168,0.14);display:flex;align-items:center;justify-content:center">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#FFE1A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.6"></rect><path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7"></path><path d="M12 14.6v2.2"></path></svg>
+      </div>
+      <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:18px;font-weight:700;letter-spacing:-0.2px">Privatsphäre zuerst</h3>
+      <p style="margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,0.62);text-wrap:pretty">Bild und Ton laufen Ende-zu-Ende verschlüsselt direkt zwischen deinen Geräten. Nichts wird aufgezeichnet.</p>
+    </article>
+    <article style="display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)" style-hover="border:1px solid rgba(255,225,168,0.28)">
+      <div style="width:44px;height:44px;border-radius:13px;background:rgba(252,191,90,0.14);display:flex;align-items:center;justify-content:center">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#FCBF5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a5.6 5.6 0 0 0-5.6 5.6c0 4.1-1.9 5.6-1.9 5.6h15s-1.9-1.5-1.9-5.6A5.6 5.6 0 0 0 12 3.5z"></path><path d="M10.2 17.4a1.9 1.9 0 0 0 3.6 0"></path></svg>
+      </div>
+      <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:18px;font-weight:700;letter-spacing:-0.2px">Kluge Alarme</h3>
+      <p style="margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,0.62);text-wrap:pretty">Erkennt Weinen, Husten &amp; Co. direkt auf dem Gerät und meldet sich — auch wenn dein Handy gesperrt ist.</p>
+    </article>
+    <article style="display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)" style-hover="border:1px solid rgba(255,225,168,0.28)">
+      <div style="width:44px;height:44px;border-radius:13px;background:rgba(255,225,168,0.14);display:flex;align-items:center;justify-content:center">
+        <svg width="21" height="21" viewBox="0 0 120 120" aria-hidden="true"><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="#FFE1A8" mask="url(#wm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="#FFE1A8"></path></g></svg>
+      </div>
+      <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:18px;font-weight:700;letter-spacing:-0.2px">Zum Einschlafen</h3>
+      <p style="margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,0.62);text-wrap:pretty">Sanftes Rauschen, Regen und Meer mit Timer, Nachtmodus und dunkler Nachtsicht.</p>
+    </article>
+    <article style="display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)" style-hover="border:1px solid rgba(255,225,168,0.28)">
+      <div style="width:44px;height:44px;border-radius:13px;background:rgba(123,220,164,0.14);display:flex;align-items:center;justify-content:center">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9.4" y="3" width="5.2" height="10" rx="2.6"></rect><path d="M6.4 11.4a5.6 5.6 0 0 0 11.2 0"></path><path d="M12 17v3.5M9.6 20.5h4.8"></path></svg>
+      </div>
+      <h3 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:18px;font-weight:700;letter-spacing:-0.2px">Zurücksprechen</h3>
+      <p style="margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,0.62);text-wrap:pretty">Beruhige dein Baby aus der Ferne per Push-to-Talk. Mehrere Eltern-Geräte möglich.</p>
+    </article>
+  </div>
+</section>
+
+<sc-if value="{{ showPrivacyBand }}" hint-placeholder-val="{{ true }}">
+<section id="privatsphaere" style="max-width:1120px;margin:0 auto;padding:clamp(36px,5vw,60px) clamp(20px,5vw,44px)">
+  <div style="position:relative;overflow:hidden;display:flex;gap:clamp(28px,5vw,56px);flex-wrap:wrap;padding:clamp(28px,4.5vw,48px);border-radius:28px;background:linear-gradient(150deg,rgba(255,225,168,0.09),rgba(255,225,168,0.02) 60%),#1C1738;border:1px solid rgba(255,225,168,0.18)">
+    <div style="position:absolute;right:-80px;top:-90px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(255,225,168,0.16),rgba(255,225,168,0) 70%);pointer-events:none"></div>
+    <div style="position:relative;flex:1 1 320px;min-width:280px;display:flex;flex-direction:column;gap:16px">
+      <span style="font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,225,168,0.8)">Privatsphäre</span>
+      <h2 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(24px,3.2vw,34px);font-weight:800;letter-spacing:-0.6px;line-height:1.15;text-wrap:pretty">Keine Einstellung, die man erst finden muss.</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,0.68);text-wrap:pretty">LaLeLu ist so gebaut, dass möglichst wenig Daten überhaupt entstehen. Video und Ton laufen direkt und verschlüsselt zwischen den Familiengeräten — und die einzige dauerhaft gespeicherte Information ist ein kleiner technischer Datensatz, der sich nach 30 Tagen selbst löscht.</p>
+      <a href="datenschutz.html" style="align-self:flex-start;height:46px;padding:0 20px;border-radius:14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);color:#fff;display:flex;align-items:center;gap:8px;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:15px;font-weight:700;margin-top:4px" style-hover="background:rgba(255,255,255,0.13)">Datenschutzerklärung lesen
+        <svg width="8" height="13" viewBox="0 0 10 16" fill="none" aria-hidden="true"><path d="M2 2l6 6-6 6" stroke="rgba(255,255,255,0.6)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+    </div>
+    <ul style="position:relative;flex:1 1 300px;min-width:270px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2px">
+      <li style="display:flex;align-items:center;gap:13px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.07)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:15px;color:rgba(255,255,255,0.88)">Ende-zu-Ende verschlüsselt (DTLS-SRTP)</span>
+      </li>
+      <li style="display:flex;align-items:center;gap:13px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.07)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:15px;color:rgba(255,255,255,0.88)">Kein Konto, keine Registrierung</span>
+      </li>
+      <li style="display:flex;align-items:center;gap:13px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.07)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:15px;color:rgba(255,255,255,0.88)">Geräuscherkennung nur auf dem Gerät</span>
+      </li>
+      <li style="display:flex;align-items:center;gap:13px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.07)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:15px;color:rgba(255,255,255,0.88)">Kein Tracking, keine Werbe-SDKs</span>
+      </li>
+      <li style="display:flex;align-items:center;gap:13px;padding:14px 4px">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#7BDCA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:15px;color:rgba(255,255,255,0.88)">Push-Datensatz löscht sich nach 30 Tagen</span>
+      </li>
+    </ul>
+  </div>
+</section>
+</sc-if>
+
+<section id="support" style="max-width:1120px;margin:0 auto;padding:clamp(28px,4vw,44px) clamp(20px,5vw,44px) clamp(64px,8vw,104px)">
+  <div style="display:flex;align-items:center;gap:clamp(20px,4vw,40px);flex-wrap:wrap;padding:clamp(26px,4vw,40px);border-radius:28px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)">
+    <div style="flex:1 1 300px;min-width:260px;display:flex;flex-direction:column;gap:10px">
+      <h2 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-0.5px">Support &amp; Kontakt</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,0.62)">Fragen, Rückmeldungen oder Hilfe? Schreib direkt an den Entwickler — es antwortet ein Mensch.</p>
+    </div>
+    <a href="{{ mailto }}" style="height:52px;padding:0 24px;border-radius:14px;background:#FFE1A8;color:#2E2456;display:flex;align-items:center;gap:9px;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:16px;font-weight:700;white-space:nowrap" style-hover="background:#FFEAC0" style-active="background:#E8C270">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2E2456" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3"></rect><path d="M3.5 7l8.5 6 8.5-6"></path></svg>
+      {{ email }}
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer style="border-top:1px solid rgba(255,255,255,0.07);background:#0F0D1E">
+  <div style="max-width:1120px;margin:0 auto;padding:28px clamp(20px,5vw,44px);display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:10px">
+      <svg width="22" height="22" viewBox="0 0 120 120" aria-hidden="true"><g transform="translate(2.5 -4.25)"><circle cx="58" cy="64" r="30" fill="rgba(255,225,168,0.75)" mask="url(#wm)"></circle><path d="M78 37l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="rgba(255,225,168,0.75)"></path></g></svg>
+      <span style="font-size:14px;color:rgba(255,255,255,0.5)">© 2026 Moritz Wolf · LaLeLu</span>
+    </div>
+    <div style="flex:1"></div>
+    <nav style="display:flex;align-items:center;gap:20px">
+      <a href="datenschutz.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">Datenschutz</a>
+      <a href="{{ mailto }}" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">Kontakt</a>
+    </nav>
+  </div>
+</footer>
 </div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;email&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;moritz.wolf@a1.net&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Inhalt&quot;}, &quot;showHeroDevice&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Abschnitte&quot;}, &quot;showPrivacyBand&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Abschnitte&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._t = setInterval(() => {
+      document.querySelectorAll('image-slot').forEach(s => {
+        const hint = document.querySelector('[data-slot-hint="' + s.id + '"]');
+        if (hint) hint.style.display = s.hasAttribute('data-filled') ? 'none' : 'flex';
+      });
+    }, 800);
+  }
+  componentWillUnmount() { clearInterval(this._t); }
+  renderVals() {
+    const email = this.props.email ?? 'moritz.wolf@a1.net';
+    return {
+      email, mailto: 'mailto:' + email,
+      showHeroDevice: this.props.showHeroDevice ?? true,
+      showPrivacyBand: this.props.showPrivacyBand ?? true
+    };
+  }
+}
+</script>
 </body>
 </html>
