@@ -10,22 +10,21 @@
 <meta property="og:description" content="Datenschutzerklärung der Babyphone-App LaLeLu: Ende-zu-Ende-Verschlüsselung, kein Nutzerkonto, keine Aufzeichnung, automatische Löschung nach 30 Tagen.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:'Nunito';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/nunito-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Nunito';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/nunito-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 html,body{margin:0;background:#131024;color:#fff;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
 *{box-sizing:border-box}
 a{color:#FFE1A8;text-decoration:none}
 a:hover{color:#FFF6DE}
 h2,h3{scroll-margin-top:96px}
+.nav-link-ds:hover{background:rgba(255,255,255,0.12)}
+.toc-link:hover{background:rgba(255,255,255,0.06);color:#fff}
+.footer-link:hover{color:#FFE1A8}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-</helmet>
+</head>
+<body>
 <div style="min-height:100vh;display:flex;flex-direction:column;font-family:-apple-system,system-ui,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <linearGradient id="dcr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6DE"></stop><stop offset="1" stop-color="#FFDD9A"></stop></linearGradient>
@@ -39,7 +38,7 @@ h2,h3{scroll-margin-top:96px}
     <span style="font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.3px;color:#fff">LaLe<span style="color:#FFE1A8">Lu</span></span>
   </a>
   <div style="flex:1"></div>
-  <a href="index.html" style="height:38px;padding:0 14px;border-radius:11px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;gap:7px;font-size:14.5px;font-weight:600;color:#fff" style-hover="background:rgba(255,255,255,0.12)">
+  <a href="index.html" class="nav-link-ds" style="height:38px;padding:0 14px;border-radius:11px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;gap:7px;font-size:14.5px;font-weight:600;color:#fff">
     <svg width="8" height="13" viewBox="0 0 10 16" fill="none" aria-hidden="true"><path d="M8 2L2 8l6 6" stroke="rgba(255,255,255,0.7)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     Zurück
   </a>
@@ -51,7 +50,7 @@ h2,h3{scroll-margin-top:96px}
     <h1 style="margin:0;font-family:Nunito,ui-rounded,-apple-system,system-ui,sans-serif;font-size:clamp(30px,4.6vw,50px);font-weight:800;letter-spacing:-1.1px;line-height:1.08;text-wrap:pretty">Datenschutzerklärung</h1>
     <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:99px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12)">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
-      <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.65)">Stand: {{ stand }}</span>
+      <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.65)">Stand: 25. Juli 2026</span>
     </div>
   </div>
 
@@ -92,7 +91,7 @@ h2,h3{scroll-margin-top:96px}
         </div>
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:15.5px;font-weight:600">Moritz Wolf</span>
-          <a href="{{ mailto }}" style="font-size:14.5px">{{ email }}</a>
+          <a href="mailto:moritz.wolf@a1.net" style="font-size:14.5px">moritz.wolf@a1.net</a>
         </div>
       </div>
       <p style="margin:0;max-width:70ch;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72);text-wrap:pretty">Bei Fragen zum Datenschutz oder um von deinen Rechten Gebrauch zu machen (siehe <a href="#s8">Abschnitt 8</a>), wende dich bitte an diese Adresse.</p>
@@ -263,16 +262,16 @@ h2,h3{scroll-margin-top:96px}
 
   <aside style="flex:1 1 240px;max-width:none;min-width:220px;position:sticky;top:98px;display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:20px;background:#1C1738;border:1px solid rgba(255,255,255,0.09)">
     <span style="font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.45);padding:0 8px 8px">Inhalt</span>
-    <a href="#worum" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff">Worum geht es?</a>
-    <a href="#s1" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">1</span>Verantwortlich</a>
-    <a href="#s2" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">2</span>Datenflüsse</a>
-    <a href="#s3" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">3</span>Gespeicherte Daten</a>
-    <a href="#s4" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">4</span>Berechtigungen</a>
-    <a href="#s5" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">5</span>Kinder</a>
-    <a href="#s6" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">6</span>Dienstleister</a>
-    <a href="#s7" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">7</span>Speicherdauer</a>
-    <a href="#s8" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">8</span>Deine Rechte</a>
-    <a href="#s9" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)" style-hover="background:rgba(255,255,255,0.06);color:#fff"><span style="color:rgba(255,225,168,0.6);padding-right:8px">9</span>Änderungen</a>
+    <a href="#worum" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)">Worum geht es?</a>
+    <a href="#s1" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">1</span>Verantwortlich</a>
+    <a href="#s2" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">2</span>Datenflüsse</a>
+    <a href="#s3" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">3</span>Gespeicherte Daten</a>
+    <a href="#s4" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">4</span>Berechtigungen</a>
+    <a href="#s5" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">5</span>Kinder</a>
+    <a href="#s6" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">6</span>Dienstleister</a>
+    <a href="#s7" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">7</span>Speicherdauer</a>
+    <a href="#s8" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">8</span>Deine Rechte</a>
+    <a href="#s9" class="toc-link" style="padding:8px;border-radius:9px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7)"><span style="color:rgba(255,225,168,0.6);padding-right:8px">9</span>Änderungen</a>
   </aside>
 
   </div>
@@ -286,20 +285,11 @@ h2,h3{scroll-margin-top:96px}
     </div>
     <div style="flex:1"></div>
     <nav style="display:flex;align-items:center;gap:20px">
-      <a href="index.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">Startseite</a>
-      <a href="{{ mailto }}" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)" style-hover="color:#FFE1A8">{{ email }}</a>
+      <a href="index.html" class="footer-link" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)">Startseite</a>
+      <a href="mailto:moritz.wolf@a1.net" class="footer-link" style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)">moritz.wolf@a1.net</a>
     </nav>
   </div>
 </footer>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;email&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;moritz.wolf@a1.net&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Inhalt&quot;}, &quot;stand&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;25. Juli 2026&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Inhalt&quot;}}">
-class Component extends DCLogic {
-  renderVals() {
-    const email = this.props.email ?? 'moritz.wolf@a1.net';
-    return { email, mailto: 'mailto:' + email, stand: this.props.stand ?? '25. Juli 2026' };
-  }
-}
-</script>
 </body>
 </html>
