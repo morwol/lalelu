@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://morwol.github.io/lalelu/sitemap.xml
