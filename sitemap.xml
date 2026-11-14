@@ -1,6 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://morwol.github.io/lalelu/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://morwol.github.io/lalelu/index.en.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://morwol.github.io/lalelu/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://morwol.github.io/lalelu/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/en/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/fr/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/it/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/es/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/pt-br/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/nl/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/pl/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/tr/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ru/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://morwol.github.io/lalelu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://morwol.github.io/lalelu/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://morwol.github.io/lalelu/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://morwol.github.io/lalelu/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://morwol.github.io/lalelu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://morwol.github.io/lalelu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://morwol.github.io/lalelu/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://morwol.github.io/lalelu/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/"/>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/datenschutz.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/en/privacy.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/en/guides/baby-monitor-app-no-subscription.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/en/guides/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/en/guides/use-mac-as-baby-monitor.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/altes-iphone-als-babyphone.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/babyphone-app-datenschutz.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/babyphone-ohne-abo.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/babyphone-reichweite-unterwegs.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://morwol.github.io/lalelu/ratgeber/mac-als-babyphone.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
 </urlset>
