@@ -51,7 +51,7 @@
   --spring:linear(0, .058, .18, .321, .455, .573, .671, .75, .812, .86, .897, .924, .945, .96, .971, .979, .985, .989, .992, .994, .996, .997, .998, .999, 1);
   --spring-slow:735ms;
   --spring-fast:515ms;
-  /* Altbestand: Variablennamen der früheren Seite (guide.css nutzt sie) */
+  /* Altbestand: Variablennamen der früheren Seite */
   --bg:var(--night-900);--fg:var(--text);--muted:var(--text-2);--card:var(--night-800);--line:rgba(255,255,255,.1);
   --brand:var(--cream-300);--brand-2:var(--text);--accent:var(--cream-300);--link:var(--cream-300);--hero1:var(--night-900);--hero2:var(--night-800);
   color-scheme:dark;
@@ -420,7 +420,7 @@ main details p{margin:0 0 1.1rem;color:var(--text-2)}
   .shots{grid-template-columns:repeat(4,1fr)}
   .hero figure img{width:300px}
 }
-/* Ratgeber (guide.css ergänzt dasselbe) */
+/* Ratgeber (Feinschliff: Abschnitt 7) */
 .crumbs{font-size:var(--t-small);color:var(--text-2);padding:1.25rem 0 0}
 .crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.2rem .5rem}
 .crumbs li+li::before{content:"›";margin-right:.5rem;color:var(--text-3)}
@@ -538,3 +538,65 @@ main details p{margin:0 0 1.1rem;color:var(--text-2)}
   .faq details,.card,.sleeper{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
 }
 @media print{header.site{position:static}.js .night{height:auto}.js .night-stage{position:static;height:auto}}
+
+/* ---------- 7 Ratgeber und Rechtstexte: ruhige Langform (ersetzt guide.css) ----------
+   Leitidee: eine schmale Lesespalte (~66 Zeichen), die Typo-Stufen aus Abschnitt 1, viel Luft zwischen den Kapiteln.
+   Gilt für ratgeber/*.html, en/guides/*.html, datenschutz.html, en/privacy.html und 404.html. */
+.crumbs,.article{max-width:44rem;margin-left:auto;margin-right:auto}
+.crumbs{padding-top:1.5rem;color:var(--text-3)}
+.crumbs a{color:var(--text-2);text-decoration:none}
+.crumbs a:hover{color:#fff}
+.crumbs li[aria-current]{color:var(--text-3)}
+.article{padding:1.25rem 0 clamp(64px,9vw,112px)}
+.article h1{font-size:clamp(2rem,5.6vw,3.5rem);line-height:1.04;letter-spacing:-.04em;margin:.9rem 0 1rem}
+.article .lead{font-size:var(--t-lead);line-height:1.4;letter-spacing:-.012em;color:var(--text-2);margin:0 0 1.5rem;max-width:none}
+.article .meta{margin:0 0 1.4rem;color:var(--text-3);font-size:var(--t-small);letter-spacing:.005em}
+.article h2{font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.12;letter-spacing:-.03em;margin:clamp(2.75rem,6vw,4rem) 0 .75rem;scroll-margin-top:84px}
+.article h3{font-size:var(--t-lead);line-height:1.25;letter-spacing:-.015em;margin:2rem 0 .4rem;scroll-margin-top:84px}
+.article p,.article li{max-width:66ch;color:var(--text)}
+.article p{margin:0 0 1.1rem;line-height:1.65}
+.article ul,.article ol{padding-left:1.35rem;margin:0 0 1.25rem}
+.article li{margin:.4rem 0;line-height:1.6}
+.article li::marker{color:var(--cream-500)}
+.article strong{color:#fff;font-weight:600}
+.article .lead,.article .meta{color:var(--text-2)}
+.article .meta{color:var(--text-3)}
+.article .tablewrap{margin:1.5rem 0 1.75rem}
+.article .tablewrap table{font-size:var(--t-small);line-height:1.5}
+.article .tablewrap th{font-weight:600}
+.article .tablewrap tbody th{color:#fff;font-weight:600}
+.article .tablewrap p{margin:0;color:inherit}
+.toc{margin:1.75rem 0 0;padding:1.25rem 1.5rem 1.35rem}
+.toc .toc-title{margin:0 0 .5rem;font:700 var(--t-small)/1.2 var(--font-display);letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)}
+.toc ol{padding-left:1.25rem;margin:0}
+.toc li{margin:.15rem 0;max-width:none}
+.toc a{display:inline-block;padding:.2rem 0;color:var(--text);text-decoration:none}
+.toc a:hover{color:var(--cream-300)}
+.box{margin:1.75rem 0;padding:1.1rem 1.3rem;max-width:none}
+.box p{max-width:none;margin:.2rem 0}
+.related{margin-top:clamp(3rem,6vw,4.5rem)}
+.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.related li{margin:0;max-width:none}
+.related li a{display:flex;align-items:center;min-height:56px;padding:.9rem 1.25rem;border-radius:var(--r20);background:var(--night-800);color:#fff;text-decoration:none;font:600 var(--t-body)/1.3 var(--font-display);letter-spacing:-.01em;transition:background-color 160ms ease,transform 260ms var(--spring)}
+.related li a:hover{background:var(--night-700);color:#fff}
+.related li a:active{transform:scale(.99);transition-duration:100ms}
+.guides{gap:8px;margin-top:2rem}
+.guides li{max-width:none;padding:0}
+.guides li>a{display:block;padding:1.4rem 1.5rem .15rem;text-decoration:none;color:#fff}
+.guides li>a:hover{color:var(--cream-300)}
+.guides p{margin:0;padding:.2rem 1.5rem 1.4rem;color:var(--text-2);max-width:none}
+/* FAQ im Artikel: dieselben Kacheln wie auf der Startseite (.faq), nur ohne Spaltenraster */
+.faq-article{margin:1rem 0 0}
+.faq-article .faq-list{gap:8px}
+.faq-article details{margin:0;padding:0}
+.faq-article summary{padding:18px 24px;min-height:64px}
+.faq-article .faq-a p{max-width:none;margin:0;padding:0 24px 22px;color:var(--text-2)}
+/* Rechtstexte */
+.legal{max-width:46rem;padding:clamp(1.5rem,4vw,3rem) var(--gutter) clamp(64px,9vw,112px)}
+.legal h1{font-size:clamp(2rem,5.6vw,3.5rem);line-height:1.04;letter-spacing:-.04em;margin:0 0 1rem}
+.legal h2{font-size:clamp(1.4rem,3vw,1.75rem);line-height:1.15;letter-spacing:-.025em;margin:3rem 0 .6rem;scroll-margin-top:84px}
+.legal p,.legal li{max-width:66ch;line-height:1.65}
+.legal p{margin:0 0 1.1rem}
+.legal li{margin:.35rem 0}
+.legal ul,.legal ol{padding-left:1.35rem}
+.legal .tablewrap p{margin:0}

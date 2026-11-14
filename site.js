@@ -1,5 +1,16 @@
 /* LaLeLu – kleine Interaktionsschicht. Keine Abhängigkeiten, kein Tracking.
-   Ohne dieses Skript bleibt jede Seite vollständig lesbar und bedienbar. */
+   Ohne dieses Skript bleibt jede Seite vollständig lesbar und bedienbar.
+
+   SPRACHE: Das Skript enthält keine eigenen Texte. Eine Sprachseite braucht keine JS-Änderung, sie setzt nur
+   <html lang="xx"> (Uhrzeit-Format über Intl, z. B. "en", "pt-BR", "ru") und diese data-Attribute im HTML:
+     .sleeper input[name=sound]   data-name   Klangname, ersetzt {s}            (z. B. "Weißes Rauschen")
+     .sleep-out output            data-at     Uhrzeit-Muster mit {t}            (z. B. "{t} Uhr", "at {t}")
+     .sleep-out output            data-endless  Anzeige bei "ohne Ende"
+     .sleep-out p                 data-timer  Satz mit {s} und {m} (Minuten)
+     .sleep-out p                 data-endless Satz mit {s}
+     .talk-hint                   data-live   Text, solange die Sprechtaste gehalten wird
+   Die Ruhetexte (Standardanzeige) stehen als normaler Inhalt im HTML. Beschriftungen (aria-label, aria-live)
+   liegen ebenfalls komplett im HTML. */
 (function () {
   "use strict";
   var doc = document.documentElement;
@@ -179,7 +190,9 @@
       if (!out) return;
       if (min > 0) {
         var end = new Date(Date.now() + min * 60000);
-        var hm = end.toLocaleTimeString(lang, { hour: "2-digit", minute: "2-digit" });
+        var hm;
+        try { hm = new Intl.DateTimeFormat(lang, { hour: "2-digit", minute: "2-digit" }).format(end); }
+        catch (err) { hm = end.toTimeString().slice(0, 5); }
         out.textContent = (out.getAttribute("data-at") || "{t}").replace("{t}", hm);
         outNote.textContent = (outNote.getAttribute("data-timer") || "").replace("{s}", name).replace("{m}", min);
       } else {
