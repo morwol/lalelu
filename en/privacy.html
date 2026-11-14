@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – LaLeLu Baby Monitor</title>
+<meta name="description" content="Privacy policy of the LaLeLu baby monitor app: end-to-end encryption, no user account, no recording, automatic deletion after 30 days.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://morwol.github.io/lalelu/en/privacy.html">
+<link rel="alternate" hreflang="de" href="https://morwol.github.io/lalelu/datenschutz.html">
+<link rel="alternate" hreflang="en" href="https://morwol.github.io/lalelu/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://morwol.github.io/lalelu/datenschutz.html">
+<meta name="apple-itunes-app" content="app-id=6793401296">
+<meta name="theme-color" content="#2a1f66">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LaLeLu">
+<meta property="og:title" content="Privacy Policy – LaLeLu Baby Monitor">
+<meta property="og:description" content="Privacy policy of the LaLeLu baby monitor app: end-to-end encryption, no user account, no recording, automatic deletion after 30 days.">
+<meta property="og:url" content="https://morwol.github.io/lalelu/en/privacy.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://morwol.github.io/lalelu/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LaLeLu baby monitor app: moon icon and start screen">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy – LaLeLu Baby Monitor">
+<meta name="twitter:description" content="Privacy policy of the LaLeLu baby monitor app: end-to-end encryption, no user account, no recording, automatic deletion after 30 days.">
+<meta name="twitter:image" content="https://morwol.github.io/lalelu/img/og-image.png">
+<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="./" aria-label="LaLeLu home"><img src="../img/icon-192.png" width="36" height="36" alt="" decoding="async">LaLeLu</a>
+<nav aria-label="Main navigation"><a href="./">Home</a><a href="../datenschutz.html" hreflang="de" lang="de">Deutsch</a></nav>
+</div></header>
+<main id="main"><div class="wrap legal">
+<p><em>This is a translation for convenience. The legally binding version is the German original: <a href="../datenschutz.html" hreflang="de" lang="de">Datenschutzerklärung</a>.</em></p>
+<p>Legal</p>
+<h1>Privacy Policy</h1>
+<p>Last updated: July 25, 2026</p>
+<h2>The most important points first</h2>
+<p>LaLeLu is built so that as little data as possible ends up anywhere. Video and sound travel directly and encrypted between your family's devices, there is no user account with us, and the only information stored long-term is a small technical record that is automatically deleted after 30 days.</p>
+<p>No user account · No recording · Deletion after 30 days</p>
+<h2 id="worum">What is this about?</h2>
+<p>LaLeLu is a baby monitor for iPhone, iPad and Mac. This policy describes as honestly and precisely as possible which data arises when you use it, where it goes and what happens to it.</p>
+<h2 id="s1">1. Who is responsible?</h2>
+<p>LaLeLu is developed and operated by an individual:</p>
+<p><strong>Moritz Wolf</strong><br><a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
+<p>If you have questions about data protection or want to exercise your rights (see <a href="#s8">Section 8</a>), please contact this address.</p>
+<h2 id="s2">2. How does LaLeLu work — and where does data flow?</h2>
+<h3>2.1 Video and sound of the transmission</h3>
+<p>Picture and sound are transmitted <strong>end-to-end encrypted directly between your family's devices</strong> (technology: WebRTC with industry-standard DTLS-SRTP encryption). Only the devices you have paired yourself can see the picture.</p>
+<p>If a direct connection is technically not possible, the data stream — still encrypted — is routed through an intermediary server of Cloudflare (TURN relay). Even then, Cloudflare <strong>cannot decrypt or read</strong> picture and sound. <strong>Video or sound is never recorded or stored at any time.</strong></p>
+<h3>2.2 Sound detection</h3>
+<p>LaLeLu detects e.g. crying or coughing <strong>entirely on the device</strong> (Apple's SoundAnalysis). <strong>No audio is sent to the cloud or to us</strong> and nothing is stored for training purposes.</p>
+<h3>2.3 Pairing of the devices</h3>
+<p>For pairing, LaLeLu uses your existing <strong>Apple iCloud access</strong> (CloudKit). LaLeLu itself has <strong>no account of its own, no registration, no password</strong>. The pairing key remains with Apple/iCloud and on your devices.</p>
+<h3>2.4 Connection setup (signaling)</h3>
+<p>Before a direct connection is made, the devices technically "arrange" it via an intermediary server (Cloudflare Worker). The contents of this arrangement are additionally encrypted (AES-GCM). If this route fails, iCloud serves as a fallback.</p>
+<h3>2.5 Alerts via notification</h3>
+<p>If a sound is detected and you are not in the app, LaLeLu can send a notification — via the Cloudflare intermediary to <strong>Apple's push service (APNs)</strong>.</p>
+<h2 id="s3">3. What is stored long-term — and where?</h2>
+<h3>3.1 On the intermediary server (Cloudflare)</h3>
+<p>So that your device can receive notifications, the server stores a small record per parent device:</p>
+<ul>
+<li>the <strong>Apple push token</strong> (anonymous device identifier assigned by Apple — no name, no phone number),</li>
+<li>the information <strong>iOS or iPadOS</strong>,</li>
+<li>a <strong>timestamp</strong> of the last update.</li>
+</ul>
+<p>Grouping is done via a <strong>randomly generated identifier</strong> that is <strong>not linked to Apple ID, name or personal details</strong>. <strong>Automatic deletion after 30 days</strong> without an update.</p>
+<p><strong>Not stored:</strong> names, email, location, picture/sound content, alert history.</p>
+<p><strong>For transparency, two items pass through the server unencrypted (plain text)</strong>, only for the seconds of delivery, without being stored: the <strong>device name</strong> (e.g. "Moritz's iPhone") and the <strong>type of sound</strong> (e.g. "coughing"). We state this openly because transparency matters more to us than a flawless image.</p>
+<h3>3.2 IP addresses</h3>
+<p>As with any internet service, the <strong>IP address</strong> is visible to the network service provider (here Cloudflare) when a connection is set up. <strong>LaLeLu itself does not store IP addresses.</strong> Cloudflare's privacy notices also apply.</p>
+<h3>3.3 On your device (local)</h3>
+<p>A local <strong>activity history</strong> (time, type, detection confidence) remains <strong>exclusively on your device</strong>, is limited to <strong>max. 500 entries / 14 days</strong> and is <strong>not uploaded</strong>.</p>
+<h2 id="s4">4. Which permissions — and what for?</h2>
+<div class="tablewrap"><table>
+<tbody>
+<tr><th scope="row">Camera</th><td>Transmit the live picture from the baby device to the parent devices.</td></tr>
+<tr><th scope="row">Microphone</th><td>Sound transmission and on-device sound detection.</td></tr>
+<tr><th scope="row">Notifications</th><td>Alerts when a sound is detected and the app is in the background.</td></tr>
+<tr><th scope="row">Local network</th><td>Direct connection on the same Wi-Fi (fastest, most private route).</td></tr>
+</tbody></table></div>
+<h2 id="s5">5. Children and minors</h2>
+<p>LaLeLu transmits picture and sound of a baby — <strong>exclusively within the family pairing you have set up</strong>. <strong>No disclosure to third parties for advertising purposes, no tracking, no analytics/advertising SDKs, no ads.</strong></p>
+<h2 id="s6">6. Service providers involved</h2>
+<p>Neither receives <strong>picture/sound content in plain text</strong>:</p>
+<p><strong>Apple</strong> — iCloud / CloudKit · APNs<br>Device pairing and delivery of notifications. Apple's privacy policy also applies.</p>
+<p><strong>Cloudflare</strong> — Intermediary · TURN relay<br>Connection setup, delivery to Apple, encrypted fallback route for the transmission. Servers located worldwide.</p>
+<h2 id="s7">7. Retention periods at a glance</h2>
+<div class="tablewrap"><table>
+<thead><tr><th scope="col">What</th><th scope="col">Where</th><th scope="col">How long</th></tr></thead>
+<tbody>
+<tr><td>Video/sound of the transmission</td><td>is not stored</td><td>—</td></tr>
+<tr><td>Detected audio</td><td>not transmitted to the cloud</td><td>—</td></tr>
+<tr><td>Push token, OS info, timestamp</td><td>Cloudflare intermediary</td><td>up to 30 days, then automatic deletion</td></tr>
+<tr><td>Activity history</td><td>locally on your device</td><td>max. 500 entries / 14 days</td></tr>
+<tr><td>Pairing key</td><td>Apple iCloud / your devices</td><td>until you dissolve the pairing</td></tr>
+</tbody></table></div>
+<h2 id="s8">8. Your rights</h2>
+<p>Since LaLeLu can also be used in the EU/Germany/Austria, the GDPR applies. Among other things, you have the right of access, rectification, erasure, restriction, objection and to lodge a complaint with a supervisory authority.</p>
+<p><strong>How to delete your data</strong><br>Dissolve the pairing in the app and/or uninstall the app. The small push record on the intermediary server expires automatically at the latest <strong>30 days</strong> after the last activity. For further requests: contact address from <a href="#s1">Section 1</a>.</p>
+<h2 id="s9">9. Changes</h2>
+<p>If anything about LaLeLu changes in a way that affects your data, we will update this policy and the "Last updated" date above.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<ul><li><a href="./">Home</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="https://apps.apple.com/app/id6793401296">App Store</a></li><li><a href="../datenschutz.html" hreflang="de" lang="de">Deutsch</a></li></ul>
+<p>LaLeLu is a private baby monitor for iPhone, iPad and Mac. Free, no account, no subscription. Contact: <a href="mailto:moritz.wolf@a1.net">moritz.wolf@a1.net</a></p>
+<p>Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc.</p>
+</div></footer>
+</body>
+</html>
